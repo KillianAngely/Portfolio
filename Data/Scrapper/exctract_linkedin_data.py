@@ -12,7 +12,7 @@ load_dotenv()
 class Driver:
     def __init__(self):
         self.options = Options()
-        self.options.add_argument("--headless")
+        # self.options.add_argument("--headless")
         self.options.add_argument("--start-maximized")
         self.options.add_argument("--no-sandbox")
         self.options.add_experimental_option("detach", True)
@@ -56,22 +56,25 @@ class LinkedinScraper:
 
     def extract_data_profile(self, profile_url):
         self.driver.get(profile_url)
-        WebDriverWait(self.driver, 10).until(
-            lambda d: d.find_element(By.CSS_SELECTOR, "#ember32 button #ember37")
-            )
-        main_page = self.driver.find_element(By.CSS_SELECTOR, ".scaffold-layout__inner.scaffold-layout-container.scaffold-layout-container--reflow")
-        if main_page is not None:
-            print("page found")
-            self.get_experience()
-
-    def get_experience(self):
-        WebDriverWait(self.driver, 10).until(
-            lambda d: d.find_element(By.CSS_SELECTOR, ".pv-profile-section.experience-section.ember-view")
-            )
-        pass
-            
+        section = "body .application-outlet .authentication-outlet #profile-content .body .scaffold-layout .scaffold-layout__inner .scaffold-layout__main"
+        
+        try:
+            WebDriverWait(self.driver, 5).until(
+                lambda d: d.find_element(By.CSS_SELECTOR,section)
+                )
+            section = self.driver.find_element(By.CSS_SELECTOR,section)
+            All_section = section.find_elements(By.CSS_SELECTOR,'section')
+            for section in All_section:
+                print(section.get_attribute('innerHTML'))
 
 
+            self.driver.close()
+        except Exception as e:
+            print('error', e)
+            self.driver.close()
+
+
+    
 def main():
     driver = Driver().get_driver()
     linkedin_scraper = LinkedinScraper(driver)
