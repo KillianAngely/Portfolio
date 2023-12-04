@@ -1,0 +1,23 @@
+{   
+    "experiences":[],
+    "educations":[],
+    "social_links": [
+        {   "id": "github",
+            "name": "github",
+            "url": "https://github.com/KillianAngely",
+            "icon": "fab fa-github"
+        },
+        {
+            "id": "linkedin",
+            "name": "linkedin",
+            "url": "https://www.linkedin.com/in/killian-angely-0b1b3a1b2/",
+            "icon": "fab fa-linkedin"
+        },
+        {
+            "id":"email_address",
+            "name": "email address",
+            "url": "killian.angely@outlook.fr",
+            "icon": "fab fa-twitter"
+        }
+    ]
+}
