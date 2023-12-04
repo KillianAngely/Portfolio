@@ -1,32 +1,8 @@
-import { Octokit } from "octokit";
-import { useState,useEffect } from "react";
-function Repo_github() {
-    const [repos, setRepos] = useState([]);
-    const token: string = import.meta.env.VITE_GITHUB_TOKEN ;
-    const octokit = new Octokit({ auth: token });
-    useEffect(() => {
-    octokit.request("GET /users/{owner}/repos", {
-        owner: "KillianAngely",
-    }).then((response) => {
-        setRepos(response.data);
-        console.log(response.status);
-    }).catch((error) => {
-        console.error(error);
-    });
-}, []);
+import Get_github_api from "./useCase/Github_api";
 
-    return (
-        <div>
-            {repos.map((repo :any) => (
-                <div>
-                    <a href={repo.html_url}>{repo.name}</a>
-                    <div>
-                    <p>{repo.description}</p>
-                    <p>{repo.language}</p>
-                    </div>
-                </div>
-            ))}
-        </div>
-    )
+function Repo_github() {
+    const get_github_api = new Get_github_api("GET /users/{owner}/repos","KillianAngely");
+    const data = get_github_api.get_github_api();
+    console.log(data);
 }
 export default Repo_github;
