@@ -1,4 +1,5 @@
-import Repo_github from './github'
+import Landing from './landing'
+import GithubRepo from './github'
 import Footer from './footer'
 import Header from './header'
 import './App.css'
@@ -7,7 +8,8 @@ function App() {
   return (
     <>
     <Header/>
-    <Repo_github/>
+    <Landing/>
+    <GithubRepo/>
     <Footer/>
     </>
   )

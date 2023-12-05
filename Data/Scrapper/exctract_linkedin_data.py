@@ -6,6 +6,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from dotenv import load_dotenv
 import os
+import time
 load_dotenv()
 
 
@@ -46,6 +47,7 @@ class LinkedinScraper:
             if username_input is not None and password_input is not None:
                 print("Username and password found")
                 username_input.send_keys(username)
+                time.sleep(3)
                 password_input.send_keys(password)
                 login_button = login_form.find_element(By.CSS_SELECTOR, ".btn__primary--large.from__button--floating")
                 if login_button is not None:
@@ -65,6 +67,7 @@ class LinkedinScraper:
             section = self.driver.find_element(By.CSS_SELECTOR,section)
             All_section = section.find_elements(By.CSS_SELECTOR,'section')
             for section in All_section:
+                print('-------------------')
                 print(section.get_attribute('innerHTML'))
 
 
