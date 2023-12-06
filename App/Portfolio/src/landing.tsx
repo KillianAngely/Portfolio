@@ -18,6 +18,7 @@ const Landing = () => {
     return (
         
         <div>
+            <h1>Landing</h1>
             <ul>
                 <li>{response?.name}</li>
                 <li>{response?.company}</li>

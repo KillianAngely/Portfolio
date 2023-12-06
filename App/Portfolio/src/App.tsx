@@ -2,6 +2,8 @@ import Landing from './landing'
 import GithubRepo from './github'
 import Footer from './footer'
 import Header from './header'
+import Experience from './Experience'
+import Education from './Work'
 import './App.css'
 
 function App() {
@@ -9,6 +11,8 @@ function App() {
     <>
     <Header/>
     <Landing/>
+    <Experience/>
+    <Education/>
     <GithubRepo/>
     <Footer/>
     </>

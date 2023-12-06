@@ -15,7 +15,7 @@ const GithubRepo: React.FC = () => {
 
     return (
        <div>
-              <h1>Github API</h1>
+              <h1>Github Repos</h1>
               <ul>
                 {data?.map((repo: any) => (
                      <li>
