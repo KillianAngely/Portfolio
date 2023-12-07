@@ -1,4 +1,4 @@
-import Get_github_api from "./useCase/Github_api";
+import Get_github_api from "../useCases/Github_api";
 import React, { useEffect, useState } from "react";
 
 const GithubRepo: React.FC = () => {
@@ -14,11 +14,11 @@ const GithubRepo: React.FC = () => {
     }, []);
 
     return (
-       <div>
-              <h1>Github Repos</h1>
+       <section>
+              <h2>Github Repos</h2>
               <ul>
                 {data?.map((repo: any) => (
-                     <li>
+                     <li key={repo.id}>
                         <div>
                             <span>{repo.name}</span>
                             <span>{repo.description}</span>
@@ -27,7 +27,7 @@ const GithubRepo: React.FC = () => {
                     </li>
                 ))}
               </ul>
-         </div>
+         </section>
     );
 };
 

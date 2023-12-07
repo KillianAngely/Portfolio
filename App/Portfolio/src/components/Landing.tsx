@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Get_github_api from './useCase/Github_api';
+import Get_github_api from '../useCases/Github_api';
 
 const Landing = () => {
     const [response, setResponse] = useState<any>(null);
@@ -16,16 +16,15 @@ const Landing = () => {
     }, []);
 
     return (
-        
-        <div>
-            <h1>Landing</h1>
+        <section>
+            <h2>Landing</h2>
             <ul>
                 <li>{response?.name}</li>
                 <li>{response?.company}</li>
                 <li>{response?.bio}</li>
                 <li><span>Curently working in </span>{response?.location}</li>
             </ul>
-        </div>
+        </section>
     );
 };
 
