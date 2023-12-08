@@ -18,15 +18,12 @@ function Experience (){
                         <div className='rows__title'>
                             <h3>{experience_info.name}</h3>
                             <span>
-                                {experience_info.startdate} 
-                                -
-                                {experience_info.enddate}
+                                {experience_info.startdate} - {experience_info.enddate}
                             </span>
                         </div>
                         <div className='rows__description'>
                             <h4>{experience_info.position}</h4>
-                            <span>{experience_info.contract}</span>
-                            <span>{experience_info.location}</span>
+                            <p>{experience_info.contract}</p>
                         </div>
                         
                     </div>

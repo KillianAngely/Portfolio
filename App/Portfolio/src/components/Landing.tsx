@@ -20,9 +20,11 @@ const Landing = () => {
         <section>
             <div className='landing_container'>
                 <div className='rows__title tiny_center_start'>
-                    <h2>{response?.name}</h2>
-                    <p className='text_center'>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur atque similique, dicta doloremque eligendi id quos fuga ullam possimus non. Voluptas sequi exercitationem animi tempore laborum vitae dolorem laudantium odio!
+                    <h2 className='landing_hero_sentence'>{response?.name}</h2>
+                    <p className='landing_description text_center'>
+                    <p className='landing_description text_center'>
+                        Hi, I'm Killian! I'm a passionate software developer with a love for creating innovative and efficient solutions. I have experience in web development, particularly in Python and TypeScript. I enjoy working on challenging projects and collaborating with talented individuals. Let's build something amazing together!
+                    </p>
                     </p>
                 </div>
                 <div className='rows__description center'>   
@@ -33,8 +35,8 @@ const Landing = () => {
                 </div> 
             </div>
             <div className='landing_baseline'>
-                <span>{response?.bio}</span>
-                <span><span>Curently working in </span>{response?.location}</span>
+                <p>{response?.bio}</p>
+                <p>Curently working in <span>{response?.location}</span></p>
             </div>
             
         </section>

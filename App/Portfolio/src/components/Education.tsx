@@ -23,14 +23,12 @@ function Education() {
               <div className="rows__title">
                 <h3>{education_info.name}</h3>
                 <span>
-                  {education_info.startdate}-{education_info.enddate}
+                  {education_info.startdate} - {education_info.enddate}
                 </span>
               </div>
 
               <div className="rows__description">
-                <h4>{education_info.diploma}</h4>
-                <span>{education_info.description}</span>
-                <span>{education_info.location}</span>
+                <p>{education_info.diploma}</p>
               </div>
             </div>
           )

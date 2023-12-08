@@ -1,26 +1,43 @@
 /* Common Style */
-@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+
 body{
   transition: all 0.5s ease-in-out;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Hedvig Letters Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  
 }
 main{
   padding: 0 84px;
 } 
 a{
   text-decoration: none;
-  color: #000;
   cursor: pointer;
+  color: #000;
+
 }
 a:hover{
-  color: blue;
+  text-decoration: underline;
 }
 
 li{
   margin:0 6px;
+}
+h2{
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+h3{
+  font-size: 24px;
+  font-weight: 700;
+}
+h4{
+  font-size: 16px;
+  font-weight: 600;
 }
 .display_list{
   border-top: 1px solid #c4c4c4;
@@ -56,10 +73,22 @@ li{
   color: #fff;
   transition: all 0.5s ease-in-out;
 }
-
+.dark_theme a{
+  color: #fff;
+}
 .text_light{
   color :gray;
 }
-.text_light:hover{
-  color: #1a1a1a;
+
+/* responsive */
+@media screen and (max-width: 928px){
+  .landing_container{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  main{
+    padding: 0 24px;
+    align-items: center;
+  }
+
 }

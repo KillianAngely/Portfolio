@@ -1,15 +1,27 @@
 .landing_container{
     display: flex;
 }
-
 .landing_baseline{
     display: flex;
     justify-content: space-between;
     padding-top: 1rem;
     margin-right: 84px;
 }
-
+.landing_baseline p{
+    font-size: 18px;
+}
+.landing_baseline span{
+    font-weight: 600;
+}
 .Profil_picture{
     height: 500px;
 }
-    
+.landing_hero_sentence{
+    text-transform: none;
+    letter-spacing: 0px;
+    font-size: 72px;
+}
+.landing_description{
+    font-size: 30px;
+}
+

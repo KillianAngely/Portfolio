@@ -9,7 +9,6 @@ const GithubRepo: React.FC = () => {
         const fetchData = async () => {
             const response = await get_github_api.get_github_api();
             setData(response);
-            console.log(response);
         };
         fetchData();
     }, []);
@@ -24,7 +23,6 @@ const GithubRepo: React.FC = () => {
                         </div>
                         <div className="rows__description">
                             <p>{repo.description}</p>
-                            <p>{repo.language}</p>
                         </div>
                     </div>
                 ))}

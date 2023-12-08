@@ -1,3 +1,4 @@
+import '../styles/Header.css'
 function Navbar(){
     const darktheme = () => {
         document.body.classList.toggle('dark_theme');
