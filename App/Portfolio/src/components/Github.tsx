@@ -1,5 +1,4 @@
 import Get_github_api from "../useCases/Github_api";
-import "../styles/Github.css";
 import React, { useEffect, useState } from "react";
 
 const GithubRepo: React.FC = () => {
@@ -19,12 +18,14 @@ const GithubRepo: React.FC = () => {
        <section>
               <h2>Github Repos</h2>
                 {data?.map((repo: any) => (
-                    <div key={repo.id} className="repo_inner cool_list">
-                        <h3><a href={repo.html_url}>{repo.name}</a></h3>
-                        <ul>
-                            <li>{repo.description}</li>
-                            <li>{repo.language}</li>
-                        </ul>
+                    <div key={repo.id} className='display_list'>
+                        <div className="rows__title">
+                            <h3><a href={repo.html_url}>{repo.name}</a></h3>
+                        </div>
+                        <div className="rows__description">
+                            <p>{repo.description}</p>
+                            <p>{repo.language}</p>
+                        </div>
                     </div>
                 ))}
          </section>

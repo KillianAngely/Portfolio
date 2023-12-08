@@ -11,14 +11,14 @@ import './styles/App.css'
 function App() {
   return (
     <>
-    <Header/>
       <main>
-        <Landing/>
-        <Experience/>
-        <Education/>
-        <GithubRepo/>
+      <Header/>
+      <Landing/>
+      <Experience/>
+      <Education/>
+      <GithubRepo/>
+      <Footer/>
       </main>
-    <Footer/>
     </>
   )
 }

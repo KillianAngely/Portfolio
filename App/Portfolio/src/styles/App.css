@@ -1,66 +1,65 @@
-/* GENERAL STYLES */
-
-/*Colors*/
-:root {
-  --color-link: #0c13f7;
-}
-body {
-  margin: 0;
+/* Common Style */
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&display=swap');
+body{
+  transition: all 0.5s ease-in-out;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
+  font-family: 'Hedvig Letters Sans', sans-serif;
 }
-main {
-  /*need review this and why this unity*/
+main{
   padding: 0 84px;
-}
-h1,
-h2,
-h3 {
-  font-weight: bold;
-  
-}
-
-h2 {
-  letter-spacing: 4px;
-}
-
-h3 {
-    margin-top: 0;
-    /*why use this value*/
-    padding-right: 10px;
-}
-
-h1,
-h2 {
-  text-transform: uppercase;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-a {
+} 
+a{
   text-decoration: none;
-  color: black;
-  /* for build */
-  text-decoration: underline;
+  color: #000;
+  cursor: pointer;
 }
-a:hover {
-  color: var(--color-link);
+a:hover{
+  color: blue;
 }
-/*COMMMON STYLE*/
-.cool_list {
+
+li{
+  margin:0 6px;
+}
+.display_list{
   border-top: 1px solid #c4c4c4;
   display: flex;
   margin-bottom: 48px;
   padding-top: 48px;
   width: 100%;
 }
-.rows_title{
-    width: 50%;
+
+.rows__title{
+  width: 50%;
 }
-.rows_description{
+
+.rows__description{
     width: 50%;
+    height: max-content;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tiny_center_start{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+/* Dark Theme */
+.dark_theme{
+  background-color: #1a1a1a;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+
+.text_light{
+  color :gray;
+}
+.text_light:hover{
+  color: #1a1a1a;
 }

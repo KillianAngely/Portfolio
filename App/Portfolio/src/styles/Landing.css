@@ -1,0 +1,15 @@
+.landing_container{
+    display: flex;
+}
+
+.landing_baseline{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    margin-right: 84px;
+}
+
+.Profil_picture{
+    height: 500px;
+}
+    
