@@ -1,15 +1,66 @@
-*{
+/* GENERAL STYLES */
+
+/*Colors*/
+:root {
+  --color-link: #0c13f7;
+}
+body {
+  margin: 0;
   padding: 0;
-  margin: auto;
   box-sizing: border-box;
+}
+main {
+  /*need review this and why this unity*/
+  padding: 0 84px;
+}
+h1,
+h2,
+h3 {
+  font-weight: bold;
+  
+}
+
+h2 {
+  letter-spacing: 4px;
+}
+
+h3 {
+    margin-top: 0;
+    /*why use this value*/
+    padding-right: 10px;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
 }
 
 ul {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
+  /* for build */
+  text-decoration: underline;
+}
+a:hover {
+  color: var(--color-link);
+}
+/*COMMMON STYLE*/
+.cool_list {
+  border-top: 1px solid #c4c4c4;
+  display: flex;
+  margin-bottom: 48px;
+  padding-top: 48px;
+  width: 100%;
+}
+.rows_title{
+    width: 50%;
+}
+.rows_description{
+    width: 50%;
 }

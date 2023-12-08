@@ -12,22 +12,25 @@ function Experience (){
  
     return(
         <section>
-            <div>
                 <h2>Experience</h2>
                 {experience_item.map((experience_info) => (
-                    <ul key={experience_info.id}>
-                        <li>{experience_info.name}</li>
-                        <li>
-                            {experience_info.startdate} 
-                            -
-                            {experience_info.enddate}
-                        </li>
-                        <li>{experience_info.position}</li>
-                        <li>{experience_info.contract}</li>
-                        <li>{experience_info.location}</li>
-                    </ul>
+                    <div key={experience_info.id} className='cool_list'>
+                        <div className='rows_title'>
+                            <h3>{experience_info.name}</h3>
+                            <span>
+                                {experience_info.startdate} 
+                                -
+                                {experience_info.enddate}
+                            </span>
+                        </div>
+                        <div className='rows_description'>
+                            <h4>{experience_info.position}</h4>
+                            <span>{experience_info.contract}</span>
+                            <span>{experience_info.location}</span>
+                        </div>
+                        
+                    </div>
                 ))}
-            </div>
         </section>
     )
 }

@@ -20,7 +20,6 @@ const Landing = () => {
             <h2>Landing</h2>
             <ul>
                 <li>{response?.name}</li>
-                <li>{response?.company}</li>
                 <li>{response?.bio}</li>
                 <li><span>Curently working in </span>{response?.location}</li>
             </ul>

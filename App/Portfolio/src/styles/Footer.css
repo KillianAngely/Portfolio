@@ -1,0 +1,19 @@
+/* Footer section */
+
+.footer_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    height: 100%;
+}
+.social_list{
+    display: flex;
+}
+.social_list_item{
+    margin-right: 20px;
+}
+
+.label_baseline_footer{
+    text-transform: uppercase;
+}

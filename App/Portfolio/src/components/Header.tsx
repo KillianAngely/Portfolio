@@ -1,10 +1,9 @@
+import '../styles/Header.css';
 function Navbar(){
     return(
-        <section>
-            <nav>
-                <h1>linkwithkillianangeky</h1>
-            </nav>
-        </section>
+        <nav>
+            <h1>linkwithkillianangely</h1>
+        </nav>
     )
 }
 
