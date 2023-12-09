@@ -90,5 +90,27 @@ h4{
     padding: 0 24px;
     align-items: center;
   }
+  .display_list{
+    flex-direction: column;
+    align-items: start;
+  }
+  .landing_baseline{
+    flex-direction: column;
+  }
+  .rows__title{
+    width: 100%;
+  }
+  .tiny_center_start{
+    align-items: center;
+  }
+  .display_footer{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .display_footer_list{
+    /* center */
+    padding: 0;
+    margin-bottom: 0;
 
+  }
 }
