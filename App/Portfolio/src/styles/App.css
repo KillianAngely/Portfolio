@@ -68,6 +68,20 @@ h4{
 
 }
 /* Dark Theme */
+@media (prefers-color-scheme: dark) {
+  body {
+      background-color: #1a1a1a;
+      color: #fff;
+      transition: all 0.5s ease-in-out;
+  }
+  body a{
+    color: #fff;
+  }
+  .text_light{
+    color :gray;
+  }
+  
+}
 .dark_theme{
   background-color: #1a1a1a;
   color: #fff;
