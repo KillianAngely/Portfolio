@@ -28,7 +28,7 @@ const Landing = () => {
                     </p>
                 </div>
                 <div className='rows__description center'>   
-                    <img src="https://portfoliobucket2324.s3.eu-north-1.amazonaws.com/zoom2__ezuczqgu41yu_large_2x.jpg"
+                    <img src="https://portfoliobucket2324.s3.eu-north-1.amazonaws.com/Killian_arm.png"
                         alt="profil_picture" className='Profil_picture'>
                     
                     </img>
