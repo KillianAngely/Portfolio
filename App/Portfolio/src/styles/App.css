@@ -67,39 +67,6 @@ h4{
   justify-content: center;
 
 }
-<<<<<<< HEAD
-/* Dark Theme */
-@media (prefers-color-scheme: dark) {
-  body {
-      background-color: #1a1a1a;
-      color: #fff;
-      transition: all 0.5s ease-in-out;
-  }
-  body a{
-    color: #fff;
-  }
-  .text_light{
-    color :gray;
-  }
-  
-}
-=======
-
-@media (prefers-color-scheme: dark) {
-  .dark_theme {
-    background-color: #1a1a1a;
-    color: #fff;
-    transition: all 0.5s ease-in-out;
-  }
-  .dark_theme a {
-    color: #fff;
-  }
-  .text_light {
-    color: gray;
-  }
-}
-
->>>>>>> bd6134a (reconciliation and add auto dark theme)
 .dark_theme{
   background-color: #1a1a1a;
   color: #fff;
