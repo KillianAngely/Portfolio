@@ -17,7 +17,6 @@ function Education() {
       <h2>Education</h2>
       {education_item.map(
         (education_info) => (
-          console.log(education_info),
           (
             <div key={education_info.id} className="display_list">
               <div className="rows__title">

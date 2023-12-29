@@ -9,7 +9,6 @@ const Landing = () => {
         const fetchData = async () => {
             const get_profil_user = new Get_github_api("GET /users/KillianAngely", "KillianAngely");
             const response = await get_profil_user.get_github_api();
-            console.log(response)
             setResponse(response);
         };
 
